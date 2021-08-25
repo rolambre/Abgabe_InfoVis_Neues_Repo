@@ -1,0 +1,21 @@
+---
+title: "About us"
+description: |
+  Autor:innen der Website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Diese Website wurde erstellt von:
+* Robert Lambrecht 
+* Leonie Merheim 
+* Lavanya Colombus
+
+### Wir studieren Digitale Medienkommunikation an der RWTH Aachen University. Im Rahmen des Seminars "Informationsvisualisierung und Sprache" haben wir uns entschieden eine Website zu erstellen, die Informationen zur aktuellen Corona-Pandemie mithilfe von Visualisierungen enthält. 
+
+### Für Fragen stehen wir euch jederzeit zur Verfügung unter den folgenden E-Mail-Adressen:
+#### lavanya.colombus@rwth-aachen.de
+#### leonie.merheim@rwth-aachen.de
+#### robert.lambrecht@rwth-aachen.de

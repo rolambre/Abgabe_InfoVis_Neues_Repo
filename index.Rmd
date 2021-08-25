@@ -1,0 +1,23 @@
+---
+title: "Das Impflexikon - Alles rund um Covid-19 und das Impfen!"
+description: |
+  Willkommen auf unserer Website. Hier bekommt ihr alle wichtigen Informationen rund ums Thema Impfen und dem aktuellen Infektionsgeschehen.
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+#knitr::include_graphics(c("~/Desktop/martin-sanchez-vsicyd4c4a-unsplash.jpg"))
+#in Markwodn unten: ![Quelle: Portal Globales Lernen](~/Desktop/martin-sanchez-vsicyd4c4a-unsplash.jpg)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+```
+
+![Quelle: Portal Globales Lernen](Images/martin-sanchez-vsicyd4c4a-unsplash.jpg)
+
+### Unser Impflexikon informiert euch über die aktuelle Impfsituation in Deutschland und in den einzelnen Bundesländern. Zudem zeigen wir euch, wie weit Deutschland, im Vergleich zu unseren Nachbarländern, mit dem Impfen vorankommt. Um euch den Fortschritt bezüglich der Impfsituation gegen Corona zu zeigen, vergleichen wir diese mit anderen Krankheitsverläufen wie Polio, Tetanus und Pocken.
+
+
+

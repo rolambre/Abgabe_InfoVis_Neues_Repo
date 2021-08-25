@@ -1,0 +1,33 @@
+name: "."
+title: "Impflexikon"
+description: |
+  Herzlich willkommen im Impflexikon!
+output_dir: "_site"
+navbar: 
+  search: true
+  left: 
+    - icon: fas fa-search
+  right:
+    - text: "Infektionsgeschehen"
+      menu:
+        - text: "Infektionen und Tode"
+          href: Infosall.html
+        - text: "Bundesländer"
+          href: A_Deutschland Mapping_2.html
+    - text: "Impfungen"
+      href: impfungende.html
+    - text: "International"
+      menu:
+        - text: "Nachbarländer"
+          href: Laendervergleich.html
+    - text: "Krankheiten"
+      menu: 
+        - text: "Vergleich mit anderen Infektionskrankheiten"
+          href: krankheiten.html
+    - text: "Ausblick"
+      menu:
+        - text: "Delta-Variante"
+          href: ausblick.html
+    - text: "About us"
+      href: about.html
+output: distill::distill_article

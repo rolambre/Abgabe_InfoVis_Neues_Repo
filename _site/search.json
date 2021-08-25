@@ -1,0 +1,21 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About us",
+      "description": "Autor:innen der Website",
+      "author": [],
+      "contents": "\nDiese Website wurde erstellt von:\nRobert Lambrecht\nLeonie Merheim\nLavanya Colombus\nWir studieren Digitale Medienkommunikation an der RWTH Aachen University. Im Rahmen des Seminars “Informationsvisualisierung und Sprache” haben wir uns entschieden eine Website zu erstellen, die Informationen zur aktuellen Corona-Pandemie mithilfe von Visualisierungen enthält.\nFür Fragen stehen wir euch jederzeit zur Verfügung unter den folgenden E-Mail-Adressen:\nlavanya.colombus@rwth-aachen.de\nleonie.merheim@rwth-aachen.de\nrobert.lambrecht@rwth-aachen.de\n\n\n\n",
+      "last_modified": "2021-08-25T11:19:10+02:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Das Impflexikon - Alles rund um Covid-19 und das Impfen!",
+      "description": "Willkommen auf unserer Website. Hier bekommt ihr alle wichtigen Informationen rund ums Thema Impfen und dem aktuellen Infektionsgeschehen.\n",
+      "author": [],
+      "contents": "\nQuelle: Portal Globales LernenUnser Impflexikon informiert euch über die aktuelle Impfsituation in Deutschland und in den einzelnen Bundesländern. Zudem zeigen wir euch, wie weit Deutschland, im Vergleich zu unseren Nachbarländern, mit dem Impfen vorankommt. Um euch den Fortschritt bezüglich der Impfsituation gegen Corona zu zeigen, vergleichen wir diese mit anderen Krankheitsverläufen wie Polio, Tetanus und Pocken.\n\n\n\n",
+      "last_modified": "2021-08-25T11:19:11+02:00"
+    }
+  ],
+  "collections": []
+}

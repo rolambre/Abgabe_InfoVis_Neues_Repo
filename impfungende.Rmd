@@ -1,0 +1,74 @@
+---
+title: "Impfungen"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+covid_data <- readr::read_csv('owid-covid-data.csv', guess_max = 25000)
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+Impfstoffe <- readr::read_csv("vaccinations-by-manufacturer.csv", guess_max = 75000)
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(ggplot2)
+library(tidyverse)
+library(dplyr)
+library(colorspace)
+library(ggthemes)
+library(scales)
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+Impfstoffe %>%
+  filter(location == "Germany") -> impfstoffe_deutschland
+```
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+covid_data %>%
+filter(location == "Germany") -> covid_data_germany 
+```
+
+## Um die Ausbreitung des Coronavirus einzudämmen, stehen inzwischen vier Impfstoffe bereit. Sie machen Hoffnung auf ein Leben, wie es vor der Pandemie war, allerdings lief das Impfen in Deutschland zunächst schleppend an. Das Diagramm zeigt, dass sich der Impffortschritt inzwischen deutlich verschnellert hat.
+
+### Anteil geimpfter Personen in Deutschland
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+covid_data_germany %>%
+  select(date, people_vaccinated_per_hundred, people_fully_vaccinated_per_hundred) %>%
+  pivot_longer(cols = c(people_vaccinated_per_hundred, people_fully_vaccinated_per_hundred), names_to = "vaccination") %>%
+  ggplot(aes(x = date, y = value, color = value)) +
+  geom_line() +
+  xlab("Datum") +
+  ylab("Bevölkerung geimpft in %") +
+  scale_x_date(limits = as.Date(c('2020-12-01','2021-08-15'))) +
+  scale_color_continuous_qualitative() +
+  facet_wrap(vars(vaccination)) +
+  labs(title = "Die Anzahl einfach und vollständig geimpfter Personen in Deutschland\nsteigt seit Anfang des Jahres 2021 stark an",
+              subtitle = "Anzahl geimpfter Personen in Deutschland nach Datum",
+              caption = "Quelle: Our World in Data")
+```
+
+### Verabreichte Impfstoffe in Deutschland
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+impfstoffe_deutschland[849:852, ] %>%
+  ggplot(aes(fct_reorder(vaccine, total_vaccinations), total_vaccinations)) +
+  geom_col(fill = "skyblue") +
+  xlab("Impfstoff") +
+  ylab("Anzahl der Impfungen") +
+  scale_y_continuous(
+    name = "Anzahl der Impfungen in Millionen Dosen",
+    limits = c(0, 70000000),
+    breaks = c(0, 10000000, 20000000, 40000000, 60000000),
+    labels = c("0", "10", "20", "40", "60")) +
+  labs(title = "Der Impfstoff vom Hersteller Pfizer/BioNTech wird in Deutschland\nmit großem Abtand am meisten verabreicht",
+              subtitle = "Anzahl verwendeter Impfdosen nach Impfstoff-Hersteller",
+              caption = "Quelle: Our World in Data")
+```
+
+##### Sie heißen Comirnaty, mRNA-1273 oder AZD1222 und sollen Einkaufen ohne Mund-Nasen-Schutz oder unbeschwerte Urlaubsreisen wieder ermöglichen. In Deutschland hat sich was den Impfstoff angeht inzwischen ein klarer Favorit herauskristallisiert. Die ersten Impfungen wurden am 27.12.2020 verabreicht.

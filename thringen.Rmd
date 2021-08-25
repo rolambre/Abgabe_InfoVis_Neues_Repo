@@ -1,0 +1,34 @@
+---
+title: "Thüringen"
+#output: html_document
+---
+
+```{r include=FALSE}
+BL = "Thüringen"
+		
+		library(sf)
+		library(tidyverse)
+		
+		library(ggiraph)
+		library(stringi)
+		library(RColorBrewer)
+```
+
+```{r include=FALSE}
+read_rds("Deutschland Mapping Daten 2/cases.rds")
+```
+		
+### So sieht der Inzidenzverlauf für Thüringen bis zum 15.08.2021 aus:	
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+bundeslaender_cases %>% filter(str_detect(Bundesland, BL)) %>%
+  ggplot() +
+  aes(x=Meldedatum, y=cases)+
+  geom_line(color = "#FF8800") +
+  xlab("Datum") +
+  ylab("Anzahl neuer Fälle") +
+  labs(title = "Das Infektionsgeschehen in Thüringen",
+              subtitle = "Anzahl neuer Corona-Fälle nach Datum ",
+              caption = "Quelle: RKI")
+```
+
