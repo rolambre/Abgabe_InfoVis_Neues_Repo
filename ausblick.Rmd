@@ -1,5 +1,5 @@
 ---
-title: "ausblick"
+title: "Ausblick"
 #output: html_document
 ---
 
@@ -21,7 +21,7 @@ library(broom)
 
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
-
+covid_data <- readr::read_csv('owid-covid-data.csv', guess_max = 25000)
 unsicherheit_plot <- covid_data %>%
   filter(location %in% c("Germany", "China", "United States", "Ghana")) %>%
   select(continent, location, date, new_cases, new_vaccinations, new_deaths)
@@ -71,6 +71,7 @@ lm_data %>%
               caption = "Dichte des Balkens zeigt den Grad der Unsicherheit an, Quelle: Our World in Data")
 
 ```
+
 ##### In diesem Diagramm haben wir den Schätzwert bezüglich des Verlaufs des Impf- und Infektionsgeschehens für euch visualsiert. Hierbei ist interessant zu sehen, wie sich die Unsicherheit in der Corona-Pandemieentwicklung nach Ländern aus verschiedenen Kontinenten unterscheidet. In Ghana und China scheint der Verlauf des Impfgeschehens, im Zusammenhang mit dem Infektionsgeschehen, sicher zu verlaufen. Im Gegensatz, ist der Verlauf in Deutschland und den USA sehr unsicher. Die ausgebleichten Balken um den Mittelwert zeigen an, dass in diesen Ländern das der Verlauf der Impfquoten nicht sicher eingeschätzt werden kann. 
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
