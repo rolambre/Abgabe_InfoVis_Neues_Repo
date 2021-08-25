@@ -19,9 +19,17 @@ BL = "Brandenburg"
 read_rds("Deutschland Mapping Daten 2/cases.rds")
 ```
 		
+```{r message=FALSE, warning=FALSE, include=FALSE}
+corona_cases <- read_csv("https://opendata.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0.csv", guess_max = 2500000)
+bundeslaender_cases <- corona_cases %>%
+  group_by(Bundesland, Meldedatum) %>%
+  summarise(cases = sum(AnzahlFall)) %>%
+  mutate(Meldedatum = as.Date(Meldedatum))
+```
+
 ### So sieht der Inzidenzverlauf für Brandenburg bis zum 15.08.2021 aus:	
 		
-```{r message=FALSE, warning=FALSE, include=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 bundeslaender_cases %>% filter(str_detect(Bundesland, BL)) %>%
   ggplot() +
   aes(x=Meldedatum, y=cases)+

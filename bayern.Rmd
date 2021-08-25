@@ -19,6 +19,14 @@ BL = "Bayern"
 read_rds("Deutschland Mapping Daten 2/cases.rds")
 ```
 
+```{r message=FALSE, warning=FALSE, include=FALSE}
+corona_cases <- read_csv("https://opendata.arcgis.com/datasets/dd4580c810204019a7b8eb3e0b329dd6_0.csv", guess_max = 2500000)
+bundeslaender_cases <- corona_cases %>%
+  group_by(Bundesland, Meldedatum) %>%
+  summarise(cases = sum(AnzahlFall)) %>%
+  mutate(Meldedatum = as.Date(Meldedatum))
+```
+
 ### So sieht der Inzidenzverlauf für Bayern bis zum 15.08.2021 aus:
 
 
