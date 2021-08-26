@@ -21,8 +21,10 @@ bundeslaender_cases <- corona_cases %>%
   mutate(Meldedatum = as.Date(Meldedatum))
 
 write_rds(bundeslaender_cases, "Deutschland Mapping Daten 2/cases.rds")
+```
 
 
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 map_germany_final <- map_germany_2[-c(17, 18, 19, 20, 21, 22), ]
 		names(map_germany_final)[names(map_germany_final) == 'NUTS_NAME'] <- 'Bundesland'
 		
@@ -40,8 +42,14 @@ map_germany_final %>%
               caption = "Quelle: RKI") +
     scale_fill_viridis_c(option = "magma", direction=-1) + 
     theme_bw() -> corona_map_germany_2
-    
-		ggiraph::girafe(
+```
+
+##### Vergleicht man die deutschen Bundesländer hinsichtlich der Inzidenzen, wird ersichtlich, dass sich am ausgewählten Datum des 15.08.2021 insbesondere in Nordrhein-Westfalen und in Bayern viele Menschen mit dem Coronavirus infiziert haben. Die interaktive Deutschlandkarte zeigt dies anhand der gewählten Farben an. Wenn du über die einzelnen Bundesländer hoverst, bekommst du die jeweilige Anzahl der gemeldeten Corona-Fälle angezeigt.
+
+#### Um einen tiefergehenden Einblick in das Infektionsgeschen im Verlauf der Coronavirus-Pandemie in den einzelnen Bundesländern zu erhalten, kannst du in dieser Karte einfach auf das Bundesland klicken, das dich näher interessiert. Du wirst dann auf die jeweilige Unterseite weitergeleitet, die den Inzidenzverlauf für das ausgewählte Bundesland anzeigt.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+ggiraph::girafe(
 		ggobj = corona_map_germany_2, pointsize = 14, width_svg = 6, height_svg = 6 * 0.618
 		)
 ```
