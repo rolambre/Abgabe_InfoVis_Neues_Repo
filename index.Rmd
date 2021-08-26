@@ -15,7 +15,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```
 
-![Quelle: Portal Globales Lernen](Images/martin-sanchez-vsicyd4c4a-unsplash.jpg)
+![Quelle: Bild von Miroslava Chrienova auf Pixabay](Images/covid-4948866_1920.jpg)
 
 ### Unser Impflexikon informiert euch über die aktuelle Impfsituation in Deutschland und in den einzelnen Bundesländern. Zudem zeigen wir euch, wie weit Deutschland, im Vergleich zu unseren Nachbarländern, mit dem Impfen vorankommt. Um euch den Fortschritt bezüglich der Impfsituation gegen Corona zu zeigen, vergleichen wir diese mit anderen Krankheitsverläufen wie Polio, Tetanus und Pocken.
 
