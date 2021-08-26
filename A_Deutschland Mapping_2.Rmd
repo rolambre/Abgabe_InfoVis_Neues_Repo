@@ -21,9 +21,8 @@ bundeslaender_cases <- corona_cases %>%
   mutate(Meldedatum = as.Date(Meldedatum))
 
 write_rds(bundeslaender_cases, "Deutschland Mapping Daten 2/cases.rds")
-```
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+
 map_germany_final <- map_germany_2[-c(17, 18, 19, 20, 21, 22), ]
 		names(map_germany_final)[names(map_germany_final) == 'NUTS_NAME'] <- 'Bundesland'
 		
