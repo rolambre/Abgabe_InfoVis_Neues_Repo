@@ -66,7 +66,7 @@ lm_data %>%
   ) +
   xlab("Schätzwert") +
   ylab("Länder") +
-  labs(title = "Schätzwert bezüglich des Impf- und Infektionsgeschehens ist je nach Land",
+  labs(title = "Schätzwert bezüglich des Impf- und Infektionsgeschehens ist je\nnach Land unterschiedlich",
               subtitle = "Schätzung bezüglich der Impfgeschehens nach verschiedenen Ländern",
               caption = "Dichte des Balkens zeigt den Grad der Unsicherheit an, Quelle: Our World in Data")
 
@@ -80,9 +80,9 @@ read.csv("Deltadaten.csv") -> Deltadaten
 Deltadaten
 ```
 
-##### Die Coronavirus-Pandemie ist in Deutschland und Europa bei Weitem nicht überstanden. Aktuell sprechen Expert:innen vom Beginn einer vierten Infektionswelle in Deutschland, bisher ist noch nicht einmal ein Viertel der deutschen Bevölkerung vollständig gemipft. 
+##### Die Coronavirus-Pandemie ist in Deutschland und Europa bei Weitem nicht überstanden. Aktuell sprechen Expert:innen vom Beginn einer vierten Infektionswelle in Deutschland, Anfang Juli waren ca. 40% der deutschen Bevölkerung vollständig gemipft. 
 
-##### Hinzu kommt, dass sich inzwischen insbesondere die Delta-Variante des Coronavirus in rasanter Geschwindigkeit ausbreitet. In Deutschland ist sie nun die am weitesten verbreitete Virus-Variante und hat damit die Alpha-Variante überholt. Die Delta-Variante ist dabei noch deutlich ansteckender, als die Alpha-Variante. Im Diagramm seht ihr, wie sich die Anteile der jeweiligen Virus-Varianten seit Beginn der Pandemie entwickelt haben. Mit einem Klick auf die jeweilige Virus-Variante, könnt ihr diese im Diagramm ausblenden und euch so anschauen, wie sich die Virus-Varianten einzeln entwickelt haben. Wenn ihr über die verschiedenen Linien hovert, wird außerdem  der jeweilige Wert in der entsprechenden Kalenderwoche angezeigt.
+##### Hinzu kommt, dass sich inzwischen insbesondere die Delta-Variante des Coronavirus in rasanter Geschwindigkeit ausbreitet. In Deutschland ist sie nun die am weitesten verbreitete Virus-Variante und hat damit die Alpha-Variante überholt. Die Delta-Variante ist dabei noch deutlich ansteckender, als die Alpha-Variante. Im Diagramm seht ihr, wie sich die Anteile der jeweiligen Virus-Varianten seit Beginn der Pandemie entwickelt haben. Mit einem Klick auf die jeweilige Virus-Variante in der Legende, könnt ihr diese im Diagramm ausblenden und euch so anschauen, wie sich die Virus-Varianten einzeln entwickelt haben. Wenn ihr über die verschiedenen Linien hovert, wird außerdem  der jeweilige Wert in der entsprechenden Kalenderwoche angezeigt.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 my_fun <- function(vec){ 
