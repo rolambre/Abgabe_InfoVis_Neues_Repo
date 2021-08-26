@@ -7,7 +7,7 @@ title: "Ausblick"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Im Ausblick findet ihr zunächst Informationen zum Grad der Unsicherheit im Verlauf des Impfgeschehens im internationalen Vergleich. Außerdem zeigen wir euch, wie sich der Ausbruch der Delta-Variante auf das Infektionsgeschehen auswirkt.
+### Im Ausblick findet ihr zunächst Informationen zum Grad der Unsicherheit im Verlauf des Impfgeschehens im internationalen Vergleich. Außerdem zeigen wir euch, wie sich der Ausbruch der Delta-Variante auf das Infektionsgeschehen auswirkt.
 
 ```{r include=FALSE}
 library(tidyverse)
