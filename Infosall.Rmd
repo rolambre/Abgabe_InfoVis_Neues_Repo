@@ -33,8 +33,9 @@ ggplot(covid_data_germany, aes(x=date, y=new_cases)) +
   xlab("Datum") +
   ylab("Anzahl neuer Fälle") +
   labs(title = "Das Infektionsgeschehen war gegen Jahresende 2020\nund im Frühling 2021 am höchsten",
-              subtitle = "Anzahl neuer Corona-Fälle nach Datum ",
-              caption = "Quelle: Our World in Data")
+              subtitle = "Anzahl neuer Corona-Fälle nach Datum (Die schwarze Linie kennzeichnet\nden Beginn der Impfungen) ",
+              caption = "Quelle: Our World in Data") +
+  geom_vline(xintercept = as.numeric(as.Date("2020-12-27")))
 ```
 
 ##### Im Jahre 2020 war die Anzahl der Fälle im Vergleich zum Jahr 2021 noch relativ gering. Ein deutlicher Anstieg der Fälle lässt sich gegen Ende des Jahres 2020 verzeichnen. Die höchste Anzahl der Fälle mit ca. 50.000 gemeldeten Fällen am Tag wurde Ende Dezember 2020 verzeichnet. Eine zweite Welle der Fälle mit ca. 30.000 Fällen am Tag wurde im Mai/Juni dokumentiert. Der Anstieg der Fälle lässt sich mit der Anzahl der durchgeführten Tests begründen, die im folgenden Diagramm zu sehen sind.
@@ -51,8 +52,9 @@ covid_data_germany %>%
   xlab("Datum") +
   ylab("neue Tests pro 100.000 Einwohner") +
   labs(title = "Die meisten Corona-Tests wurden im November und Dezember 2020 druchgeführt",
-              subtitle = "Anzahl der neuen Corona-Tests in Deutschland nach Datum",
-              caption = "Quelle: Our World in Data")
+              subtitle = "Anzahl der neuen Corona-Tests in Deutschland nach Datum (Die schwarze Linie kennzeichnet\nden Beginn der Impfungen)",
+              caption = "Quelle: Our World in Data") +
+  geom_vline(xintercept = as.numeric(as.Date("2020-12-27")))
 ```
 
 ##### Aufgrund der Tatsache, dass Anfang 2020 noch keine Tests für die Bevölkerung verfügbar waren, konnten nicht viele Fälle gemeldet werden. Erst ab April/Mai 2020 wurden erste Tests durchgeführt und mehr Fälle wurden gemeldet. Die meisten Corona-Tests wurden im November und Dezember 2020, inmitten der dritten Welle, durchgeführt. In diesen zwei Monaten wurden täglich zwischen 1.700 und 4.000 Tests pro 100.000 Einwohner durchgeführt. In diesem Zeitraum wurden zeitgleich die meisten Infektionsfälle verzeichnet.
@@ -67,8 +69,10 @@ ggplot(covid_data_germany, aes(x=date, y=new_deaths)) +
   xlab("Datum") +
   ylab("Anzahl neuer Todesfälle") +
   labs(title = "Die meisten Todesfälle in Verbindung mit Corona traten im Januar 2021 auf",
-              subtitle = "Anzahl neuer Todesfälle in Verbindung mit Corona nach Datum ",
-              caption = "Quelle: Our World in Data")
+              subtitle = "Anzahl neuer Todesfälle in Verbindung mit Corona nach Datum (Die orangene Linie kennzeichnet\nden Beginn der Impfungen)",
+              caption = "Quelle: Our World in Data") +
+    geom_vline(xintercept = as.numeric(as.Date("2020-12-27")), color = "#FF8800")
+
 ```
 
 ##### Die meisten Todesfälle in Verbindung mit Corona zeigen zwei Höchstphasen. Im Mai 2020 gab es täglich bis zu 500 Todesfälle, wobei die Anzahl der Todesfälle hin zum Sommer wieder sank. Mit der zweiten Infektionswelle ist die Anzahl der Todesfälle wieder stark angestiegen - mit dem höchsten Wert im Januar 2021, an dem es an einem Tag ca. 1.750 gemeldete Todesfälle in Verbindung mit Corona gab.
