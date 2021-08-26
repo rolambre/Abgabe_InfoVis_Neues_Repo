@@ -1,6 +1,6 @@
 ---
 title: "Nordrhein-Westfalen"
-#output: html_document
+output: html_document
 ---
 
 ```{r include=FALSE}
