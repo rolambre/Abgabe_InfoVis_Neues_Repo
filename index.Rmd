@@ -19,6 +19,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ### Unser Impflexikon informiert euch über die aktuelle Impfsituation in Deutschland und in den einzelnen Bundesländern. Zudem zeigen wir euch, wie weit Deutschland, im Vergleich zu unseren Nachbarländern, mit dem Impfen vorankommt. Um euch den Fortschritt bezüglich der Impfsituation gegen Corona zu zeigen, vergleichen wir diese mit anderen Krankheitsverläufen wie Polio, Tetanus und Pocken.
 
+### Hier habt ihr nochmal einen Überblick über die Themenbereiche auf dieser Website:
+* Infektionsgeschehen in Deutschland 
+* Impfungen in Deutschland 
+* internationaler Vergleich
+* Vergleich zu anderen Krankheiten 
+* Ausblick 
+
 
 
 
