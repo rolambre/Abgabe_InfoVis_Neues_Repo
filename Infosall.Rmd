@@ -21,7 +21,7 @@ library(gcookbook)
 library(grid)
 ```
 
-## Die Coronavirus-Pandemie hat Deutschland weiter iim Griff und noch ist kein Ende der Pandemie in Sicht. Hier zeigen wir euch allgemeine Informationen zum nationalen Infektionsgeschehen und Sterbefälle.
+## Die Coronavirus-Pandemie hat Deutschland weiter im Griff und noch ist kein Ende der Pandemie in Sicht. Hier zeigen wir euch allgemeine Informationen zum nationalen Infektionsgeschehen und Sterbefälle.
 
 ### Infektionsgeschehen in Deutschland
 
