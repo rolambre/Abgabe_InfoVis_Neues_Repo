@@ -20,7 +20,7 @@ library(ggthemes)
 library(gcookbook)
 ```
 
-## So steht Deutschland im Vergleich zu seinen Nachbarländern dar
+## So steht Deutschland im Vergleich zu seinen Nachbarländern da
 
 ##### Besonders interessant ist das Infektionsgeschehen von Deutschland verglichen zu seinen Nachbarländern. Im unteren Diagramm findet ihr die 7-Tage-Infektions- und Todesinzidenzen in Deutschland, den Niederlanden, Dänemark, Polen, Schweiz, Österreich, Tschechien, Frankreich, Belgien und Luxemburg.
 
@@ -86,7 +86,7 @@ covid_data %>%
               subtitle = "Anzahl geimpfter Personen in Deutschland\nund seinen Nachbarländern nach Datum",
               caption = "Quelle: Our World in Data")
 ```
-##### Deutschland und seine Nachbarländer weisen einen sehr ähnlichen Verlauf hinsichtlich der Anzahl der geimpften Personen auf. Seit Anfang 2021 steigt die Anzahl er geimpften Personen stark an. In Deutschland und seinen Nachbarländern sind zwischen 30 und 40 % der jeweiligen Bevölkerung vollständig geimpft.
+##### Deutschland und seine Nachbarländer weisen einen sehr ähnlichen Verlauf hinsichtlich der Anzahl der geimpften Personen auf. Seit Anfang 2021 steigt die Anzahl der geimpften Personen stark an. In Deutschland und seinen Nachbarländern sind zwischen 30 und 40 % der jeweiligen Bevölkerung vollständig geimpft.
 
 ### Verabreichte Impfstoffe in Deutschland und seinen Nachbarländern
 
@@ -107,9 +107,9 @@ Impfstoffe %>%
     breaks = c(0, 2000000, 4000000, 6000000),
     labels = c("0", "2", "4", "6")) +
   scale_x_discrete(expand = c(0.1,0.05)) +
-  labs(title = "Die Präferenzen von Deutschland und seinen Nachbarländern für genutzte\nImpfstoffe unterscheidet sich teil stark",
+  labs(title = "Die Präferenzen von Deutschland und seinen Nachbarländern für genutzte\n Impfstoffe unterscheidet sich teils stark",
               subtitle = "Anzahl verwendeter Impfdosen nach Land und Impfstoff-Hersteller",
               caption = "Quelle: Our World in Data")
 ```
 
-##### Die Präferenz der Impfstoffe unterscheidet sich sehr stark zwischen Deutschland und seinen Nachbarländern. Insgesamt wird in den meisten Ländern der Impfstoff Pfizer/BioNTech sowie Oxford/AstraZeneca bevorzugt. Einzelne Länder präferieren zudem den Impfstoff Moderna. Johnson&Johnson scheint in den meisten Ländern in sehr geringen Zahlen verabreicht zu werden, in Deutschland jedoch im Vergleich zu anderen Staaten am meisten. In allen aufgezeigten Ländern, außer in Luxemburg und in der Schweiz, wird BioNTech mit jeweils über 6 Millionen Dosen verabreicht und zeichnet sich demnach als bevorzugten Impfstoff aus. Zudem werden in Frankreich und Deutschland AstraZeneca und Moderna ebenfalls mit über 6 Millionen Dosen verabreicht.
+##### Die Präferenz der Impfstoffe unterscheidet sich sehr stark zwischen Deutschland und seinen Nachbarländern. Insgesamt wird in den meisten Ländern der Impfstoff Pfizer/BioNTech sowie Oxford/AstraZeneca bevorzugt. Einzelne Länder präferieren zudem den Impfstoff Moderna. Johnson&Johnson scheint in den meisten Ländern in sehr geringen Zahlen verabreicht zu werden, in Deutschland jedoch im Vergleich zu anderen Ländern am meisten. In allen aufgezeigten Ländern, außer in Luxemburg und in der Schweiz, wird BioNTech mit jeweils über 6 Millionen Dosen verabreicht und zeichnet sich demnach als bevorzugten Impfstoff aus. Zudem werden in Frankreich und Deutschland AstraZeneca und Moderna ebenfalls mit über 6 Millionen Dosen verabreicht.
