@@ -21,7 +21,7 @@ library(gcookbook)
 library(grid)
 ```
 
-## Die Coronavirus-Pandemie hat Deutschland noch immer im Griff und noch ist kein Ende der Pandemie in Sicht. Hier zeigen wir euch allgemeine Informationen zum nationalen Infektionsgeschehen und Sterbefälle.
+## Die Coronavirus-Pandemie hat Deutschland noch immer fest im Griff. Hier zeigen wir euch allgemeine Informationen zum nationalen Infektionsgeschehen und zu den Sterbefällen, die im Zusammenhang mit dem Coronavirus stehen.
 
 ### Infektionsgeschehen in Deutschland
 
@@ -57,7 +57,7 @@ covid_data_germany %>%
   geom_vline(xintercept = as.numeric(as.Date("2020-12-27")))
 ```
 
-##### Aufgrund der Tatsache, dass Anfang 2020 noch keine Tests für die Bevölkerung verfügbar waren, konnten nicht viele Fälle gemeldet werden. Erst ab April/Mai 2020 wurden erste Tests durchgeführt und mehr Fälle wurden gemeldet. Die meisten Corona-Tests wurden im November und Dezember 2020, inmitten der dritten Welle, durchgeführt. In diesen zwei Monaten wurden täglich zwischen 1.700 und 4.000 Tests pro 100.000 Einwohner durchgeführt. In diesem Zeitraum wurden zeitgleich die meisten Infektionsfälle verzeichnet.
+##### Aufgrund der Tatsache, dass Anfang 2020 noch keine Tests für die Bevölkerung verfügbar waren, konnten Infektionen nicht gemeldet werden. Erst ab April/Mai 2020 wurden erste Tests durchgeführt und mehr Fälle wurden gemeldet. Die meisten Corona-Tests wurden im November und Dezember 2020, inmitten der dritten Welle, durchgeführt. In diesen zwei Monaten wurden täglich zwischen 1.700 und 4.000 Tests pro 100.000 Einwohner durchgeführt. In diesem Zeitraum wurden zeitgleich die meisten Infektionsfälle verzeichnet.
 
 ### Todesfälle in Deutschland
 
@@ -75,6 +75,6 @@ ggplot(covid_data_germany, aes(x=date, y=new_deaths)) +
 
 ```
 
-##### Die meisten Todesfälle in Verbindung mit Corona zeigen zwei Hochphasen. Im Mai 2020 gab es täglich bis zu 500 Todesfälle, wobei die Anzahl der Todesfälle hin zum Sommer wieder sank. Mit der zweiten Infektionswelle ist die Anzahl der Todesfälle wieder stark angestiegen - mit dem höchsten Wert im Januar 2021, an dem es an einem Tag ca. 1.750 gemeldete Todesfälle in Verbindung mit Corona gab.
+##### Die Todesfälle in Verbindung mit Corona zeigen zwei Hochphasen. Im Mai 2020 gab es täglich bis zu 500 Todesfälle, wobei die Anzahl der Todesfälle zum Sommer hin wieder sank. Mit der zweiten Infektionswelle ist die Anzahl der Todesfälle wieder stark angestiegen - mit dem höchsten Wert im Januar 2021, an dem es an einem Tag ca. 1.750 gemeldete Todesfälle in Verbindung mit Corona gab.
 
 #### Aus den Diagrammen kann erschlossen werden, dass die tägliche Anzahl der gemeldeten Infektionen und Sterbefälle bis Sommer 2021 gesunken ist. Das allgemeine Infektionsgeschehen ist jedoch immer noch relativ hoch.
