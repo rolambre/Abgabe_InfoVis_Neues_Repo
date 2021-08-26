@@ -14,6 +14,39 @@ navbar:
           href: Infosall.html
         - text: "Bundesländer"
           href: A_Deutschland-Mapping_2.html
+        - text: "Baden-Württemberg"
+          href: baden-wrttemberg.html
+        - text: "Bayern"
+          href: bayern.html
+        - text: "Berlin"
+          href: berlin.html
+        - text: "Brandenburg"
+          href: brandenburg.html
+        - text: "Bremen"
+          href: bremen.html
+        - text: "Hamburg"
+          href: hamburg.html
+        - text: "Hessen"
+          href: hessen.html
+        - text: "Mecklenburg-Vorpommern"
+          href: mecklenburg-vorpommern.html
+        - text: "Niedersachsen"
+          href: niedersachsen.html
+        - text: "Nordrhein-Westfalen"
+          href: nordrhein-westfalen.html
+        - text: "Rheinland-Pfalz"
+          href: rheinland-pfalz.html
+        - text: "Saarland"
+          href: saarland.html
+        - text: "Sachsen-Anhalt"
+          href: sachsen-anhalt.html
+        - text: "Sachsen"
+          href: sachsen.html
+        - text: "Schleswig-Holstein"
+          href: schleswig-holstein.html
+        - text: "Thüringen"
+          href: thringen.html
+    
     - text: "Impfungen"
       href: impfungende.html
     - text: "International"
