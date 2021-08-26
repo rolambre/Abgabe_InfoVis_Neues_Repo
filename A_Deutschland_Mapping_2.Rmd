@@ -12,7 +12,7 @@ library(RColorBrewer)
 library(viridis)
 ```
 
-## Auf dieser Seite könnt ihr euch zum Infektionsgeschehen einzelner Bundesländer informieren. 
+## Auf dieser Seite kannst du dich zum Infektionsgeschehen einzelner Bundesländer informieren. 
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 map_germany_2 <- sf::read_sf("Deutschland Mapping Daten 2/")
@@ -48,7 +48,7 @@ map_germany_final %>%
 
 ##### Vergleicht man die deutschen Bundesländer hinsichtlich der Inzidenzen, wird ersichtlich, dass sich am ausgewählten Datum des 15.08.2021 insbesondere in Nordrhein-Westfalen und in Bayern viele Menschen mit dem Coronavirus infiziert haben. Die interaktive Deutschlandkarte zeigt dies anhand der gewählten Farben an. Wenn du über die einzelnen Bundesländer hoverst, bekommst du die jeweilige Anzahl der gemeldeten Corona-Fälle angezeigt.
 
-#### Um einen tiefergehenden Einblick in das Infektionsgeschen im Verlauf der Coronavirus-Pandemie in den einzelnen Bundesländern zu erhalten, kannst du in dieser Karte einfach auf das Bundesland klicken, das dich näher interessiert. Du wirst dann auf die jeweilige Unterseite weitergeleitet, die den Inzidenzverlauf für das ausgewählte Bundesland anzeigt.
+##### Um einen tiefergehenden Einblick in das Infektionsgeschen im Verlauf der Coronavirus-Pandemie in den einzelnen Bundesländern zu erhalten, kannst du in dieser Karte einfach auf das Bundesland klicken, das dich näher interessiert. Du wirst dann auf die jeweilige Unterseite weitergeleitet, die den Inzidenzverlauf für das ausgewählte Bundesland anzeigt.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 ggiraph::girafe(
