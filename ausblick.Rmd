@@ -67,7 +67,7 @@ lm_data %>%
   xlab("Schätzwert") +
   ylab("Länder") +
   labs(title = "Schätzwert bezüglich des Impf- und Infektionsgeschehens ist je nach Land",
-              subtitle = "Schätzung bezüglich de Impfgeschehens nach verschiedenen Ländern",
+              subtitle = "Schätzung bezüglich der Impfgeschehens nach verschiedenen Ländern",
               caption = "Dichte des Balkens zeigt den Grad der Unsicherheit an, Quelle: Our World in Data")
 
 ```
@@ -103,10 +103,14 @@ Deltadaten2  %>%
   ggplot(aes(x = Kalenderwoche, y = value, group=variante, fill=variante)) +
     geom_area(alpha=0.6 , size=1, colour="black", position="stack") +
   scale_fill_viridis(option = "magma", discrete = T)+
-  labs(y = "Prozent", fill="Kalenderwoche", title = "Neuinfektionen mit der Delta-Variante nehmen ab Kalenderwoche 22 deutlich zu",
+  labs(y = "Prozent", fill="Kalenderwoche", title = "Neuinfektionen mit der Delta-Variante nehmen ab\nKalenderwoche 22 deutlich zu",
               subtitle = "Anteil Virusvarianten nach Kalenderwoche",
               caption = "Quelle: RKI") +
-  scale_y_continuous(labels = scales::percent) -> p
+  #scale_y_continuous(labels = scales::percent) -> p
+  scale_y_continuous(
+    limits = c(0, 100),
+    breaks = c(0, 25, 50, 75, 100),
+    labels = c("0%", "25%", "50%", "75%", "100%")) -> p 
 
 
 ggplotly(p)
