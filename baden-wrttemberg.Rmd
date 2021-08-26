@@ -4,7 +4,7 @@ title: "Baden-Württemberg"
 ---
 
 ```{r include=FALSE}
-BL = "Baden-Württemberg"
+BL <- "Baden-Württemberg"
 		
 		library(sf)
 		library(tidyverse)

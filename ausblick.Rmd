@@ -9,8 +9,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 
 ```{r include=FALSE}
-library(ggplot2)
 library(tidyverse)
+library(plotly)
 library(dplyr)
 library(colorspace)
 library(ggthemes)
@@ -82,7 +82,7 @@ Deltadaten
 
 ##### Die Coronavirus-Pandemie ist in Deutschland und Europa bei Weitem nicht überstanden. Aktuell sprechen Expert:innen vom Beginn einer vierten Infektionswelle in Deutschland, bisher ist noch nicht einmal ein Viertel der deutschen Bevölkerung vollständig gemipft. 
 
-##### Hinzu kommt, dass sich inzwischen insbesondere die Delta-Variante des Coronavirus in rasanter Geschwindigkeit ausbreitet. In Deutschland ist sie nun die am weitesten verbreitete Virus-Variante und hat damit die Alpha-Variante überholt. Die Delta-Variante ist dabei noch deutlich ansteckender, als die Alpha-Variante. Im Diagramm siehst du, wie sich die Anteile der jeweiligen Virus-Varianten seit Beginn der Pandemie entwickelt haben. 
+##### Hinzu kommt, dass sich inzwischen insbesondere die Delta-Variante des Coronavirus in rasanter Geschwindigkeit ausbreitet. In Deutschland ist sie nun die am weitesten verbreitete Virus-Variante und hat damit die Alpha-Variante überholt. Die Delta-Variante ist dabei noch deutlich ansteckender, als die Alpha-Variante. Im Diagramm siehst du, wie sich die Anteile der jeweiligen Virus-Varianten seit Beginn der Pandemie entwickelt haben. Mit einem Klick auf die jeweilige Virus-Variante, kannst du diese im Diagramm ausblenden und dir so anschauen, wie sich die Virus-Varianten einzeln entwickelt haben. Wenn du über die verschiedenen Linien hoverst, wird außerdem  der jeweilige Wert in der entsprechenden Kalenderwoche angezeigt.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 my_fun <- function(vec){ 
@@ -106,7 +106,10 @@ Deltadaten2  %>%
   labs(y = "Prozent", fill="Kalenderwoche", title = "Neuinfektionen mit der Delta-Variante nehmen ab Kalenderwoche 22 deutlich zu",
               subtitle = "Anteil Virusvarianten nach Kalenderwoche",
               caption = "Quelle: RKI") +
-  scale_y_continuous(labels = scales::percent)
+  scale_y_continuous(labels = scales::percent) -> p
+
+
+ggplotly(p)
   #facet_wrap(vars(type_of_case))
 ```
 
