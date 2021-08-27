@@ -3,7 +3,6 @@ title: "Ausblick"
 #output: html_document
 ---
 
-#### Hier findet ihr Informationen zum Ausbruch der Delta-Variante.
 
 ```{r include=FALSE}
 library(tidyverse)
