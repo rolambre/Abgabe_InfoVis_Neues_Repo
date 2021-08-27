@@ -39,7 +39,7 @@ map_germany_final %>%
     ggplot() +
 		aes(fill = cases) +
 		geom_sf_interactive(aes(tooltip = cases, onclick = jscode)) + 
-    labs(title = "Mitte August meldete das Bundesland Nordrhein-Westfalen die meisten Infektionen mit dem Coronavirus",
+    labs(title = "Mitte August meldete das Bundesland\nNordrhein-Westfalen die meisten Infektionen mit dem Coronavirus",
               subtitle = "Anzahl gemeldeter Corona-Fälle nach Bundesland",
               caption = "Quelle: RKI") +
     scale_fill_viridis_c(option = "magma", direction=-1) + 
