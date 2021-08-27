@@ -8,7 +8,7 @@ title: "Unsicherheiten"
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-### Im Ausblick findet ihr Informationen zum Grad der Unsicherheit im Verlauf des Impfgeschehens im internationalen Vergleich.
+### Im Ausblick findet ihr Informationen zum Grad der Unsicherheit im Verlauf des Impfgeschehens im internationalen Vergleich. Außerdem informieren wir euch über die Delta-Variante, die in Deutschland die inzwischen am weitesten verbreitete Virus-Variante ist. 
 
 ```{r include=FALSE}
 library(tidyverse)
