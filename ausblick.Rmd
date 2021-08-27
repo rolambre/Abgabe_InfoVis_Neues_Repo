@@ -5,6 +5,18 @@ title: "Ausblick"
 
 #### Hier findet ihr Informationen zum Ausbruch der Delta-Variante.
 
+```{r include=FALSE}
+library(tidyverse)
+library(plotly)
+library(dplyr)
+library(colorspace)
+library(ggthemes)
+library(viridis)
+library(viridisLite)
+library(broom)
+```
+
+
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 read.csv("Deltadaten.csv") -> Deltadaten
 
