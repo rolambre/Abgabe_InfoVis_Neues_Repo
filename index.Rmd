@@ -1,7 +1,7 @@
 ---
 title: "Das Impflexikon - Alles rund um Covid-19 und das Impfen!"
 description: |
-  Willkommen auf unserer Website. Hier bekommt ihr alle wichtigen Informationen über die Coronavirus-Pandemie. Außerdem informieren wir euch in diesem Zusammenhang über das Thema Impfen und über das aktuelle Infektionsgeschehen.
+  Willkommen auf unserer Website. Hier findet ihr alle wichtigen Informationen zur Coronavirus-Pandemie. Außerdem informieren wir euch in diesem Zusammenhang über das Thema Impfen und über das aktuelle Infektionsgeschehen.
 site: distill::distill_website
 ---
 
