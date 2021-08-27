@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![Quelle: Bild von Miroslava Chrienova auf Pixabay](Images/covid-4948866_1920.jpg)
 
-### Unser Impflexikon informiert euch über verschiedene Themen rund um die Coronavirus-Pandemie. Ein großer Bereich ist dabei die aktuelle Impfsituation in Deutschland und in den einzelnen Bundesländern. Dabei zeigen wir euch auch, wie weit Deutschland, im Vergleich zu unseren Nachbarländern, mit dem Impfen vorankommt. Außerdem gibt es aktuelle Informationen rund um das Infektionsgeschehen und wir zeigen, wie sich ähnliche Krankheiten im Verlauf entwickelt haben. Zum Abschluss geben wir einen Ausblick, wie es mit dem Pandemieverlauf weitergehen könnte.
+### Unser Impflexikon informiert euch über verschiedene Themen rund um die Coronavirus-Pandemie. Ein großer Bereich ist dabei die aktuelle Impfsituation in Deutschland und in den einzelnen Bundesländern. Dabei zeigen wir euch auch, wie Deutschland, im Vergleich zu unseren Nachbarländern, mit dem Impfen vorankommt. Außerdem gibt es aktuelle Informationen rund um das Infektionsgeschehen und wir zeigen, wie sich ähnliche Krankheiten im Verlauf entwickelt haben. Zum Abschluss geben wir einen Ausblick, wie es mit dem Pandemieverlauf weitergehen könnte.
 
 ### Hier habt ihr nochmal einen Überblick über die Themenbereiche auf dieser Website:
 * Infektionsgeschehen in Deutschland 
