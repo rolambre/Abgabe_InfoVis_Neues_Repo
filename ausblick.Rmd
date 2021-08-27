@@ -90,8 +90,6 @@ my_fun <- function(vec){
     as.numeric(vec[2]) / sum(Deltadaten$value[Deltadaten$Kalenderwoche==vec[1]]) *100 
 }
 
-#data$percentage <- apply(data , 1 , my_fun)
-
 Deltadaten$Kalenderwoche <- as.numeric(Deltadaten$Kalenderwoche)
 
 Deltadaten %>%
