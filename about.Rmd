@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 * Leonie Merheim 
 * Lavanya Colombus
 
-### Wir studieren Digitale Medienkommunikation an der RWTH Aachen University. Im Rahmen des Seminars "Informationsvisualisierung und Sprache" haben wir uns entschieden eine Website zu erstellen, die Informationen zur aktuellen Coronavirus-Pandemie mithilfe von Visualisierungen enthält. 
+### Wir studieren Digitale Medienkommunikation an der RWTH Aachen University. Im Rahmen des Seminars "Informationsvisualisierung und Sprache" haben wir uns entschieden eine Website zu erstellen, die Informationen zur aktuellen Coronavirus-Pandemie enthält und diese mithilfe von Visualisierungen darstellt. 
 
 ### Für Fragen stehen wir euch jederzeit zur Verfügung unter den folgenden E-Mail-Adressen:
 #### lavanya.colombus@rwth-aachen.de

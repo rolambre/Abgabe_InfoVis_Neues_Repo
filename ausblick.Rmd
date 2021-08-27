@@ -81,7 +81,7 @@ read.csv("Deltadaten.csv") -> Deltadaten
 Deltadaten
 ```
 
-##### Die Coronavirus-Pandemie ist in Deutschland und weltweit bei Weitem nicht überstanden. Aktuell sprechen Expert:innen vom Beginn einer vierten Infektionswelle in Deutschland, bisland ist mehr als Drittel der deutschen Bevölkerung nicht vollständig gemipft. 
+##### Die Coronavirus-Pandemie ist in Deutschland und weltweit bei Weitem nicht überstanden. Aktuell sprechen Expert:innen vom Beginn einer vierten Infektionswelle in Deutschland, bislang ist mehr als ein Drittel der deutschen Bevölkerung nicht vollständig gemipft.
 
 ##### Hinzu kommt, dass sich inzwischen insbesondere die Delta-Variante des Coronavirus in rasanter Geschwindigkeit ausbreitet. In Deutschland ist sie nun die am weitesten verbreitete Virus-Variante. Die Delta-Variante ist dabei noch deutlich ansteckender als die zuvor überwiegende Alpha-Variante. Im Diagramm seht ihr, wie sich die Anteile der jeweiligen Virus-Varianten seit Beginn der Pandemie entwickelt haben. Mit einem Klick auf die jeweilige Virus-Variante in der Legende könnt ihr diese im Diagramm ausblenden und euch so anschauen, wie sich die Virus-Varianten einzeln entwickelt haben. Wenn ihr über die verschiedenen Linien hovert, wird außerdem  der jeweilige Wert in der entsprechenden Kalenderwoche angezeigt.
 

@@ -1,5 +1,5 @@
 ---
-title: "Corona-Inzidenzen im Bundesländervergleich"
+title: "7-Tage-Inzidenzen im Bundesländervergleich"
 #output: html_document
 ---
 ```{r message=FALSE, warning=FALSE, include=FALSE}
@@ -12,7 +12,7 @@ library(RColorBrewer)
 library(viridis)
 ```
 
-## Auf dieser Seite könnt ihr euch zum Infektionsgeschehen einzelner Bundesländer informieren. 
+## Auf dieser Seite könnt ihr euch über das Infektionsgeschehen in einzelnen Bundesländern informieren. 
 
 ```{r message=FALSE, warning=FALSE, include=FALSE}
 map_germany_2 <- sf::read_sf("Deutschland Mapping Daten 2/")
@@ -39,19 +39,20 @@ map_germany_final %>%
     ggplot() +
 		aes(fill = cases) +
 		geom_sf_interactive(aes(tooltip = cases, onclick = jscode)) + 
-    labs(title = "Die meisten Corona-Infektionen Mitte\nAugust hat NRW gemeldet. In den östlichen\nBundesländern traten vergleichsweise\nwenige Fälle auf.",
+    labs(title = "Mitte August meldete das Bundesland Nordrhein-Westfalen die meisten Infektionen mit dem Coronavirus",
               subtitle = "Anzahl gemeldeter Corona-Fälle nach Bundesland",
               caption = "Quelle: RKI") +
     scale_fill_viridis_c(option = "magma", direction=-1) + 
     theme_bw() -> corona_map_germany_2
 ```
 
-##### Vergleicht man die deutschen Bundesländer hinsichtlich der Inzidenzen, wird deutlich, dass sich am ausgewählten Datum des 15.08.2021 insbesondere in Nordrhein-Westfalen und in Bayern viele Menschen mit dem Coronavirus infiziert haben. Die interaktive Deutschlandkarte zeigt das anhand der gewählten Farben an. Wenn ihr über die einzelnen Bundesländer hovert, bekommt ihr die jeweilige Anzahl der gemeldeten Corona-Fälle angezeigt.
+##### Diese Deutschlandkarte zeigt das aktuelle Infektionsgeschehen - hier beispielhaft für den 15.08.2021. Wie ihr anhand der Farbverteilung erkennen könnt, haben sich an diesem Tag insbesondere in Nordrhein-Westfalen und in Bayern viele Menschen mit dem Coronavirus infiziert. Wenn ihr über die einzelnen Bundesländer hovert, bekommt ihr die jeweilige Anzahl der gemeldeten Corona-Fälle angezeigt.
 
-##### Um einen tiefergehenden Einblick in das Infektionsgeschen im Verlauf der Coronavirus-Pandemie in den einzelnen Bundesländern zu erhalten, könnt ihr in dieser Karte einfach auf das Bundesland klicken, das euch näher interessiert. Ihr werdet dann auf die jeweilige Unterseite weitergeleitet, die den Inzidenzverlauf für das ausgewählte Bundesland anzeigt.
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 ggiraph::girafe(
 		ggobj = corona_map_germany_2, pointsize = 14, width_svg = 6, height_svg = 6 * 0.618
 		)
 ```
+
+##### Um einen tiefergehenden Einblick in das Infektionsgeschen über den Verlauf der Coronavirus-Pandemie in den einzelnen Bundesländern zu erhalten, könnt ihr in dieser Karte einfach auf das Bundesland klicken, das euch näher interessiert. Ihr werdet dann auf die jeweilige Unterseite weitergeleitet, die den Inzidenzverlauf für das ausgewählte Bundesland anzeigt.

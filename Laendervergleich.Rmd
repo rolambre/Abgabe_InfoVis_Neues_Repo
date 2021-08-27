@@ -44,7 +44,7 @@ covid_data %>%
               caption = "Quelle: Our World in Data")
 ```
 
-##### Während die Niederlande eine stetig höhere Infektionsinzidenz, mit einem Höchstwer von ca. 480 im Januar 2021 aufweist, zeigt sich in Deutschland dagegen eine höhere Todesinzidenz als in den Niederlanden. Im Januar 2021 verzeichnet Deutschland hier einen Höchstwert von ca. 7,5.
+##### Während die Niederlande eine stetig höhere Infektionsinzidenz aufweisen, zeigt sich in Deutschland dagegen eine höhere Todesinzidenz als in den Niederlanden. Im Januar 2021 verzeichnet Deutschland hier einen Höchstwert von ca. 7,5.
 
 ### Das Infektionsgeschehen in Deutschland und seinen Nachbarländern
 
@@ -66,7 +66,7 @@ covid_data %>%
               caption = "Quelle: Our World in Data")
 ```
 
-##### Der Line-Graph zeigt einen relativ ähnlichen Verlauf der Infektions- und Todesinzidenzzahlen zwischen Frankreich, Deutschland, Luxemburg, den Niederlanden, Österreich und Schweiz. Teilweise stechen besonders Belgien und Tschechien hervor. Im Vergleich zu den anderen Ländern waren die Werte der Infektionsinzidenz sowie der Todesinzidenz in diesen beiden Ländern am höchsten.
+##### Das Diagramm zeigt einen relativ ähnlichen Verlauf der Infektions- und Todesinzidenzzahlen zwischen Frankreich, Deutschland, Luxemburg, den Niederlanden, Österreich und der Schweiz. Teilweise stechen besonders Belgien und Tschechien hervor. Verglichen mit den anderen Ländern, waren die Werte der Infektionsinzidenz sowie der Todesinzidenz in diesen beiden Ländern am höchsten.
 
 ### Impfsituation in Deutschland und seinen Nachbarländern
 
@@ -86,9 +86,9 @@ covid_data %>%
               subtitle = "Anzahl geimpfter Personen in Deutschland\nund seinen Nachbarländern nach Datum",
               caption = "Quelle: Our World in Data")
 ```
-##### Deutschland und seine Nachbarländer weisen einen sehr ähnlichen Verlauf hinsichtlich der Anzahl der geimpften Personen auf. Seit Anfang 2021 steigt die Anzahl der geimpften Personen stark an. In Deutschland und seinen Nachbarländern sind zwischen 30 und 40% der jeweiligen Bevölkerung vollständig geimpft.
+##### Deutschland und dessen Nachbarländer haben einen sehr ähnlichen Verlauf hinsichtlich des Impffortschritts. Seit Anfang 2021 steigt die Anzahl der geimpften Personen stark an. In Deutschland und dessen Nachbarländern sind zwischen 30% und 40% der jeweiligen Bevölkerung vollständig geimpft.
 
-### Verabreichte Impfstoffe in Deutschland und seinen Nachbarländern
+### Verabreichte Impfstoffe in Deutschland und dessen Nachbarländern
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 Impfstoffe %>%
@@ -112,4 +112,4 @@ Impfstoffe %>%
               caption = "Quelle: Our World in Data")
 ```
 
-##### Die Präferenz der Impfstoffe unterscheidet sich sehr stark zwischen Deutschland und seinen Nachbarländern. Insgesamt wird in den meisten Ländern der Impfstoff Pfizer/BioNTech sowie Oxford/AstraZeneca bevorzugt. Einzelne Länder präferieren zudem den Impfstoff Moderna. Johnson&Johnson wird in den meisten europäischen Ländern seltener verabreicht zu werden, in Deutschland jedoch im Vergleich zu anderen Ländern häufiger. In allen aufgezeigten Ländern, außer in Luxemburg und in der Schweiz, wird BioNTech mit jeweils über 6 Millionen Dosen verabreicht und zeichnet sich demnach als bevorzugten Impfstoff aus. Zudem werden in Frankreich und Deutschland AstraZeneca und Moderna ebenfalls mit über 6 Millionen Dosen verabreicht.
+##### Die Präferenz der Impfstoffe unterscheidet sich sehr stark zwischen Deutschland und dessen Nachbarländern. Insgesamt wird in den meisten Ländern der Impfstoff Pfizer/BioNTech sowie Oxford/AstraZeneca bevorzugt. Einzelne Länder präferieren zudem den Impfstoff Moderna. Der Impfstoff Johnson&Johnson wird in den meisten europäischen Ländern seltener verabreicht, in Deutschland jedoch im Vergleich zu anderen Ländern häufiger. In allen aufgezeigten Ländern, außer in Luxemburg und in der Schweiz, wird BioNTech mit jeweils über 6 Millionen Dosen verabreicht und zeichnet sich demnach als bevorzugten Impfstoff aus. Zudem werden in Frankreich und Deutschland AstraZeneca und Moderna ebenfalls mit über 6 Millionen Dosen verimpft.

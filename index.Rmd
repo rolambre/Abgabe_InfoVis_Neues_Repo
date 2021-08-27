@@ -1,7 +1,7 @@
 ---
 title: "Das Impflexikon - Alles rund um Covid-19 und das Impfen!"
 description: |
-  Willkommen auf unserer Website. Hier bekommt ihr alle wichtigen Informationen rund ums Thema Impfen und dem aktuellen Infektionsgeschehen.
+  Willkommen auf unserer Website. Hier bekommt ihr alle wichtigen Informationen über die Coronavirus-Pandemie. Außerdem informieren wir euch in diesem Zusammenhang über das Thema Impfen und über das aktuelle Infektionsgeschehen.
 site: distill::distill_website
 ---
 
@@ -17,12 +17,12 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ![Quelle: Bild von Miroslava Chrienova auf Pixabay](Images/covid-4948866_1920.jpg)
 
-### Unser Impflexikon informiert euch über die aktuelle Impfsituation in Deutschland und in den einzelnen Bundesländern. Zudem zeigen wir euch, wie weit Deutschland, im Vergleich zu unseren Nachbarländern, mit dem Impfen vorankommt. Um euch den Fortschritt bezüglich der Impfsituation gegen Corona zu zeigen, vergleichen wir diese mit anderen Krankheitsverläufen wie Polio, Tetanus und Pocken.
+### Unser Impflexikon informiert euch über verschiedene Themen rund um die Coronavirus-Pandemie. Ein großer Bereich ist dabei die aktuelle Impfsituation in Deutschland und in den einzelnen Bundesländern. Dabei zeigen wir euch auch, wie weit Deutschland, im Vergleich zu unseren Nachbarländern, mit dem Impfen vorankommt. Außerdem gibt es aktuelle Informationen rund um das Infektionsgeschehen und wir zeigen, wie sich ähnliche Krankheiten im Verlauf entwickelt haben. Zum Abschluss geben wir einen Ausblick, wie es mit dem Pandemieverlauf weitergehen könnte.
 
 ### Hier habt ihr nochmal einen Überblick über die Themenbereiche auf dieser Website:
 * Infektionsgeschehen in Deutschland 
 * Impfungen in Deutschland 
-* internationaler Vergleich
+* Internationaler Vergleich
 * Vergleich zu anderen Krankheiten 
 * Ausblick 
 

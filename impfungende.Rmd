@@ -33,7 +33,9 @@ covid_data %>%
 filter(location == "Germany") -> covid_data_germany 
 ```
 
-### Sie heißen Comirnaty, mRNA-1273 oder AZD1222 und sollen Einkaufen ohne Mund-Nasen-Schutz oder unbeschwerte Urlaubsreisen wieder ermöglichen. Um die Ausbreitung des Coronavirus einzudämmen, stehen inzwischen vier Impfstoffe bereit. Sie machen Hoffnung auf ein Leben, wie es vor der Pandemie war. Allerdings lief das Impfen in Deutschland zunächst schleppend an. Das Diagramm zeigt, dass sich der Impffortschritt inzwischen deutlich verschnellert hat.
+### Sie heißen Comirnaty, mRNA-1273 oder AZD1222 und sollen Einkaufen ohne Mund-Nasen-Schutz oder unbeschwerte Urlaubsreisen wieder ermöglichen. Um die Ausbreitung des Coronavirus einzudämmen, stehen inzwischen vier Impfstoffe bereit. Sie machen Hoffnung auf ein Leben, wie es vor der Pandemie war. Allerdings lief das Impfen in Deutschland zunächst schleppend an. 
+
+##### Das Diagramm zeigt, dass sich der Impffortschritt inzwischen deutlich verschnellert hat.  Die ersten Impfungen wurden am 27.12.2020 verabreicht.
 
 ### Anteil geimpfter Personen in Deutschland
 
@@ -53,6 +55,8 @@ covid_data_germany %>%
               caption = "Quelle: Our World in Data")
 ```
 
+##### In Deutschland hat sich, was den Impfstoff angeht, inzwischen ein klarer Favorit herauskristallisiert. Im Diagramm seht ihr welche Impfstoffe in Deutschland bisher am meisten verabreicht wurden.
+
 ### Verabreichte Impfstoffe in Deutschland
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -71,4 +75,3 @@ impfstoffe_deutschland[849:852, ] %>%
               caption = "Quelle: Our World in Data")
 ```
 
-##### In Deutschland hat sich, was den Impfstoff angeht, inzwischen ein klarer Favorit herauskristallisiert. Die ersten Impfungen wurden am 27.12.2020 verabreicht.

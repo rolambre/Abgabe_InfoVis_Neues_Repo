@@ -14,9 +14,9 @@ library(ggthemes)
 library(cowplot)
 ```
 
-## So sah das Infektionsgeschehen von anderen Krankheiten aus 
+## So sah das Infektionsgeschehen bei anderen Krankheiten aus 
 
-##### Das Infektionsgeschehen von Covid-19 scheint bislang kein Ende zu nehmen. Seit mehr als anderthalb Jahren ist das öffentliche Leben stark eingeschränkt und die Anzahl der Infektionen beginnt wieder zu steigen. Wie sah das Infektionsgeschehen bei anderen Krankheiten aus? Hier findet ihr Informationen zu anderen Krankheiten und ihrem Infektionsgeschen.
+##### Das Infektionsgeschehen von Covid-19 scheint bislang kein Ende zu nehmen. Seit mehr als anderthalb Jahren ist das öffentliche Leben stark eingeschränkt, Expert:innen sprechen nun von einer vierten Infektionswelle. Doch wie sah das Infektionsgeschehen bei anderen Krankheiten aus? Hier findet ihr Informationen zu vergleichbaren Pandemien und deren Infektionsgeschen.
 
 ### Das Infektionsgeschehen der Krankheit Tetanus ab Ende der 1970er-Jahre
 
@@ -104,4 +104,4 @@ ggplot(Polio_Cases_NAs_removed, aes(x=Year, y= cases)) +
 ##### Das Infektionsgeschehen von Poliomyelitis, kurz auch Polio oder Kinderlähmung, zeigt seit den 1980er-Jahren einen ähnlichen Verlauf zum Infektiosgeschehen von Tetanus. Der Höchswert neuer Fälle mit ca. 125.000 Fällen im Jahr lässt sich zu Beginn in den 1980er Jahren verzeichnen. Interessant ist hier, dass seit dem Höchstwert die Anzahl neuer jählichr Fälle konsequent sinkt. Seit dem Jahre 2010 gibt es kaum noch gemeldete Polio-Fälle, vereinzelnd treten noch einige Fälle in Pakistan und Afghanistan auf - zuletzt 2015. Dies sind weltweit die einzigen Länder, die die Krankheit noch nicht als offiziell besiegt bezeichnet haben. Als Polio-frei gilt ein Land erst, wenn binnen drei Jahren kein neuer Polio-Fall mehr gemeldet wird.
 ##### Hinweis: Bereits im 18. Jahrhundert wurde Poliomyelitis erstmals klinisch beschrieben. Vollständige Aufzeichnungen von globalen Fällen sind erst seit 1980 verfügbar.  
 
-#### Das Infektionsgeschehen der verschiedenen Krankheiten zeigt, dass es meist Jahre dauert, bis eine Infektionskrankheit wirklich als besiegt bezeichnet werden kann und die Anzahl der jährlich gemeldeten Fälle nicht mehr im vier oder fünfstelligen Bereich ist. Auch bei Covid-19 wird das Infektionsgeschehen vermutlich weiterhin andauern - auch wenn die heutigen Infrastukturen, technische Voraussetzungen und wissenschaftlichen Grundlagen deutlich weiter fortgeschritten sind als in vergangenen Jahrzehnten oder gar -hunderten.
+##### Das Infektionsgeschehen der verschiedenen Krankheiten zeigt, dass es meist Jahre dauert, bis eine Infektionskrankheit wirklich als besiegt bezeichnet werden kann und die Anzahl der jährlich gemeldeten Fälle nicht mehr im vier oder fünfstelligen Bereich ist. Auch bei Covid-19 wird das Infektionsgeschehen vermutlich weiterhin andauern - auch wenn die heutigen Infrastukturen, technische Voraussetzungen und wissenschaftlichen Grundlagen deutlich weiter fortgeschritten sind als in vergangenen Jahrzehnten oder gar -hunderten.

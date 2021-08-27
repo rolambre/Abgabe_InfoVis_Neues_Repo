@@ -21,7 +21,7 @@ library(gcookbook)
 library(grid)
 ```
 
-## Die Coronavirus-Pandemie hat Deutschland noch immer fest im Griff. Hier zeigen wir euch allgemeine Informationen zum nationalen Infektionsgeschehen und zu den Sterbefällen, die im Zusammenhang mit dem Coronavirus stehen.
+## Die Coronavirus-Pandemie hat Deutschland fest im Griff. Hier zeigen wir euch allgemeine Informationen zum nationalen Infektionsgeschehen und zu den Sterbefällen, die im Zusammenhang mit dem Coronavirus stehen.
 
 ### Infektionsgeschehen in Deutschland
 
@@ -38,7 +38,7 @@ ggplot(covid_data_germany, aes(x=date, y=new_cases)) +
   geom_vline(xintercept = as.numeric(as.Date("2020-12-27")))
 ```
 
-##### Im Jahre 2020 war die Anzahl der Fälle im Vergleich zum Jahr 2021 noch relativ gering. Ein deutlicher Anstieg der Fälle lässt sich gegen Ende des Jahres 2020 verzeichnen. Die höchste Anzahl der Fälle mit ca. 50.000 gemeldeten Fällen am Tag wurde Ende Dezember 2020 verzeichnet. Eine zweite Welle der Fälle mit ca. 30.000 Fällen am Tag wurde im Mai/Juni dokumentiert. Der Anstieg der Fälle lässt sich mit der Anzahl der durchgeführten Tests begründen, die im folgenden Diagramm zu sehen sind.
+##### Im Jahr 2020 war die Anzahl der Infektionen mit dem Coronavirus im Vergleich zum Jahr 2021 noch relativ gering. Ein deutlicher Anstieg der Fälle lässt sich gegen Ende des Jahres 2020 verzeichnen. Die höchste Anzahl der Infektionen mit ca. 50.000 gemeldeten Fällen am Tag wurde Ende Dezember 2020 verzeichnet. Eine zweite Infektionswelle mit ca. 30.000 Fällen am Tag wurde im Mai/Juni 2021 dokumentiert. Der starke Anstieg der Fälle lässt sich mit der Anzahl der durchgeführten Tests begründen, die im folgenden Diagramm zu sehen sind.
 
 ### Durchgeführte Corona-Tests in Deutschland
 
@@ -57,7 +57,7 @@ covid_data_germany %>%
   geom_vline(xintercept = as.numeric(as.Date("2020-12-27")))
 ```
 
-##### Aufgrund der Tatsache, dass Anfang 2020 noch keine Tests für die Bevölkerung verfügbar waren, konnten Infektionen nicht gemeldet werden. Erst ab April/Mai 2020 wurden erste Tests durchgeführt und mehr Fälle wurden gemeldet. Die meisten Corona-Tests wurden im November und Dezember 2020, inmitten der dritten Welle, durchgeführt. In diesen zwei Monaten wurden täglich zwischen 1.700 und 4.000 Tests pro 100.000 Einwohner durchgeführt. In diesem Zeitraum wurden zeitgleich die meisten Infektionsfälle verzeichnet.
+##### Aufgrund der Tatsache, dass Anfang 2020 noch keine Tests für die Bevölkerung verfügbar waren, konnten Infektionen nicht so weitreichend wie jetzt gemeldet werden. Erst ab April/Mai 2020 wurden erste Tests durchgeführt und mehr Fälle wurden gemeldet. Die meisten Corona-Tests wurden im November und Dezember 2020, inmitten der dritten Welle, durchgeführt. In diesen zwei Monaten wurden täglich zwischen 1.700 und 4.000 Tests pro 100.000 Einwohner durchgeführt. In diesem Zeitraum wurden zeitgleich die meisten Infektionsfälle verzeichnet.
 
 ### Todesfälle in Deutschland
 
@@ -75,6 +75,6 @@ ggplot(covid_data_germany, aes(x=date, y=new_deaths)) +
 
 ```
 
-##### Die Todesfälle in Verbindung mit Corona zeigen zwei Hochphasen. Im Mai 2020 gab es täglich bis zu 500 Todesfälle, wobei die Anzahl der Todesfälle zum Sommer hin wieder sank. Mit der zweiten Infektionswelle ist die Anzahl der Todesfälle wieder stark angestiegen - mit dem höchsten Wert im Januar 2021, an dem es an einem Tag ca. 1.750 gemeldete Todesfälle in Verbindung mit Corona gab.
+##### Die Todesfälle, die in Verbindung mit dem Coronavirus stehen, zeigen zwei Hochphasen. Im Mai 2020 gab es täglich bis zu 500 Todesfälle, wobei die Anzahl der Todesfälle zum Sommer hin wieder sank. Mit der zweiten Infektionswelle ist die Anzahl der Todesfälle wieder stark angestiegen - mit dem höchsten Wert im Januar 2021, an dem es an einem Tag ca. 1.750 gemeldete Todesfälle in Verbindung mit Corona gab.
 
-#### Aus den Diagrammen kann erschlossen werden, dass die tägliche Anzahl der gemeldeten Infektionen und Sterbefälle bis Sommer 2021 gesunken ist. Das allgemeine Infektionsgeschehen ist jedoch immer noch relativ hoch.
+##### Aus den Diagrammen kann erschlossen werden, dass die tägliche Anzahl der gemeldeten Infektionen und Sterbefälle bis Sommer 2021 gesunken ist. Täglich infiziert sich jedoch noch immer eine große Anzahl von Personen mit dem Coronavirus.
