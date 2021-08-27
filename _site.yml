@@ -59,6 +59,8 @@ navbar:
           href: krankheiten.html
     - text: "Ausblick"
       menu:
+        - text: "Unsicherheit bezüglich der Pandemieentwicklung"
+          href: Unsicherheit.html
         - text: "Delta-Variante"
           href: ausblick.html
     - text: "About us"
