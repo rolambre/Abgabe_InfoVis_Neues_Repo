@@ -73,7 +73,7 @@ lm_data %>%
   xlab("Schätzwert") +
   ylab("Länder") +
   labs(title = "Schätzwert bezüglich des Impf- und Infektionsgeschehens ist je\nnach Land unterschiedlich",
-              subtitle = "Schätzung bezüglich der Impfgeschehens nach verschiedenen Ländern",
+              subtitle = "Schätzung bezüglich des Impfgeschehens nach verschiedenen Ländern",
               caption = "Dichte des Balkens zeigt den Grad der Unsicherheit an, Quelle: Our World in Data")
 
 ```
